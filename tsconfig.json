@@ -8,6 +8,14 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
+    "paths": {
+      "@todo/*": [
+        "src/todo/*"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ]
+    },
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,

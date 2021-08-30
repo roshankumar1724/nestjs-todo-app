@@ -1,0 +1,69 @@
+[
+  {
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "apiuser",
+    "password": "apiuser@123",
+    "database": "testapi",
+    "synchronize": false,
+    "logging": true,
+    "entities": [
+      "src/**/*.entity.ts",
+      "dist/**/*.entity.js"
+    ],
+    "migrations": [
+      "src/migration/**/*.ts",
+      "dist/migration/**/*.js"
+    ],
+    "subscribers": [
+      "src/subscriber/**/*.ts",
+      "dist/subscriber/**/*.js"
+    ],
+    "cli": {
+      "entitiesDir": "src",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  },
+  {
+    "name": "development",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "apiuser",
+    "password": "apiuser@123",
+    "database": "testapi",
+    "synchronize": false,
+    "logging": true,
+    "entities": [
+      "src/**/*.entity.(t|j)s",
+      "dist/**/*.entity.(t|j)s"
+    ],
+    "migrations": [
+      "src/migration/**/*.(t|j)s",
+      "dist/migration/**/*.(t|j)s"
+    ],
+    "subscribers": [
+      "src/subscriber/**/*.(t|j)s",
+      "dist/subscriber/**/*.(t|j)s"
+    ],
+    "cli": {
+      "entitiesDir": "src",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  },
+  {
+    "name": "production",
+    "type": "mysql",
+    "host": "",
+    "port": 0,
+    "username": "",
+    "password": "",
+    "database": "",
+    "synchronize": false,
+    "dropschema": false,
+    "logging": true
+  }
+]
